@@ -23,56 +23,110 @@
     </header>
 
     <main>
-        <section>
-            <div class="about">
-                <h1>I'm Karol Michalik</h1>
-                <h3>Learning Front-end development</h3>
-                <p>Currently, I'm mechanical design engineer, but i discover passion in programming world.</p>
-            </div>
-        </section>
-
-        <section>
-            <div class="scrolldown">
-                <i class="fa-solid fa-angles-down fa-beat-fade"></i>
-            </div>
-        </section>
-
-        <section>
-            <div class="aboutme-section">
-                <div class="aboutme-section-one">
-                    <h1>About me</h1>
-                    <p>Hi, my name is Karol based in the Slovakia and i want to be a Front-End developer. My background is mechanical design engineer, but i decide to swap these profesion for lines of codes in VSCode and be creative as like in mechanical design engineering. I'm currently hunting for new informations of programming languages to reach my new goal.</p>
-                    <p>Hm, do i know everything? For sure no, but for every problem, there is a solution, that is motivated me for learning new technologies to reach that solution.</p>
+        <div class="container">
+            <section> <!-- Section 1 -->
+                <div class="about">
+                    <h1>I'm Karol Michalik</h1>
+                    <h3>Learning Front-end development</h3>
+                    <p>Currently, I'm mechanical design engineer, but i discover passion in programming world.</p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="skills">
-                <p>Experience</p>
-                <ul class="skill-links">
-                    <li>
-                        <div class="html-img">
-                            <img src="Img/HTML-img.png" alt="HTML img">
-                            <label>HTML</label>
+            <section> <!-- scroldown btn -->
+                <div class="scrolldown">
+                    <i class="fa-solid fa-angles-down fa-beat-fade"></i>
+                </div>
+            </section>
+
+            <section> <!-- Section 2 -->
+                <div class="aboutme-section">
+                    <img src="Img/me.jpg" alt="The author of these portfolio">
+                        <div class="aboutme-section-one-text"> 
+                            <h1>About me</h1>   
+                            <p>Hi, my name is Karol. I'm from Slovakia and I want to be a Front-End developer. My background is mechanical design engineer, but I decided to swap these professions for lines of codes in VSCode and be creative as like in mechanical design engineering. I'm currently hunting for new informations of programming languages to reach my new goal.</p>
+                            <p>Hm, do i know everything? For sure no, but for every problem, there is a solution, that's motivated me for learning new technologies to reach that solution.</p>
+                        </div>  
+                </div>
+            </section>
+
+            <section> <!-- Section 3 -->
+                <div class="experience">
+                    <h1>Experience</h1>
+                    <ul class="experience-links">
+                        <li>
+                            <div class="html-img">
+                                <img src="Img/HTML-img.png" alt="HTML img">
+                                <label>HTML</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="css-img">
+                                <img src="Img/CSS-img.png" alt="CSS img">
+                                <!-- <i class="fa-brands fa-css3-alt fa-lg" style="color: #1f71ff;"></i> -->
+                                <label>CSS</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="js-img">
+                                <img src="Img/JS-img.png" alt="JS img">
+                                <label>JavaScript</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section> <!-- Section 4 -->
+                <div class="projects">
+                    <h1>Projects</h1>
+                    <div class="projects-grid">
+                        <div class="projects-details-container">
+                            <div class="projects-img">
+                                <img src="Img/project.jpg" alt="Project 1">
+                            </div>
+                            <p>My portfolio</p>
+                            <div class="project-btn">
+                                <button class="btn" onclick="location.href='https://github.com'" target="_blank">
+                                    Github
+                                </button>
+                                <button class="btn" onclick="location.href='#'" target="_blank">
+                                    Live Demo
+                                </button>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="css-img">
-                            <!-- <img src="Img/CSS-img.png" alt="CSS img"> -->
-                            <i class="fa-brands fa-css3-alt fa-lg" style="color: #1f71ff;"></i>
-                            <label>CSS</label>
+                        <div class="projects-details-container">
+                            <div class="projects-img">
+                                <img src="Img/project.jpg" alt="Project 1">
+                            </div>
+                            <p>My portfolio</p>
+                            <div class="project-btn">
+                                <button class="btn" onclick="location.href='https://github.com'" target="_blank">
+                                    Github
+                                </button>
+                                <button class="btn" onclick="location.href='#'" target="_blank">
+                                    Live Demo
+                                </button>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="js-img">
-                            <img src="Img/JS-img.png" alt="JS img">
-                            <label>JavaScript</label>
+                        <div class="projects-details-container">
+                            <div class="projects-img">
+                                <img src="Img/project.jpg" alt="Project 1">
+                            </div>
+                            <p>My portfolio</p>
+                            <div class="project-btn">
+                                <button class="btn" onclick="location.href='https://github.com'" target="_blank">
+                                    Github
+                                </button>
+                                <button class="btn" onclick="location.href='#'" target="_blank">
+                                    Live Demo
+                                </button>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                    </div>
+                </div>
+            </section>
+
+        </div> <!-- Container -->
     </main>
 </body>
 </html>
