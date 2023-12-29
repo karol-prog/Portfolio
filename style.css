@@ -8,12 +8,8 @@
 
 body {
     font-family: "Roboto Slab", sans-serif;
-    /* background-image: url("img/background1.jpg");
-    background-position: center;
-    background-size: cover; */
     background: linear-gradient(212deg, rgba(23,57,96,1) 0%, rgba(41,85,106,1) 100%);
     align-items: center;
-    transition: all 0.2s ease;
     box-shadow: inset 100px 120px 250px #000, inset -100px -120px 250px #000;
     color: #fff;
 }
@@ -43,7 +39,7 @@ nav, .nav-links {
     justify-content: space-around;
     align-items: center;
     height: 15vh;
-    animation: nav 800ms ease-out;
+    animation: nav 800ms ease;
 }
 
 .logo {
@@ -60,6 +56,7 @@ nav, .nav-links {
 a {
     color: #fff;
     text-decoration: none;
+    transition: all 500ms ease;
 }
 
 a:hover {
@@ -82,6 +79,7 @@ a:hover {
     height: 400px;
     margin: 8vh auto;
     padding-top: 100px;
+    animation: about 800ms ease;
 }
 
 .about h1 {
@@ -104,6 +102,7 @@ a:hover {
     font-size: 1.5rem;
     color: white;
     cursor: pointer;
+    animation: scrolldown 800ms ease;
 }
 
 /* Section 2 */
@@ -115,7 +114,9 @@ a:hover {
     margin: 8rem auto 8rem;
     width: 100%;
     height: 500px;
-    animation: aboutme-section 800ms ease;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
 }
 
  .aboutme-section img {
@@ -127,8 +128,10 @@ a:hover {
 }
 
 .aboutme-section-one-text {
-    width: 100%;
-    height: 250px;
+    width: 60%;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .aboutme-section-one-text h1 {
@@ -136,16 +139,14 @@ a:hover {
     padding-bottom: 2rem;
 }
 
-.aboutme-text {
-    text-align: justify;
-    line-height: 1.5rem;
-}
-
 /* Sections 3 */
 .experience {
     width: 100%;
     height: 150px;
     margin: 0 auto;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
 }
 
 .experience h1 {
@@ -184,7 +185,11 @@ a:hover {
 
 /* Section 4 */
 .projects {
+    width: 100%;
     margin-top: 5rem;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
 }
 
 .projects h1 {
@@ -193,15 +198,21 @@ a:hover {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 .projects-details-container {
     border: 1px solid #ccc;
     border-radius: 20px;
     text-align: center;
+    transition: all 500ms ease;
+}
+
+.projects-details-container:hover {
+    transform: scale(1.05);
 }
 
 .projects-details-container p {
@@ -227,6 +238,9 @@ a:hover {
 /* Section 5 */
 .form-container {
     margin-top: 5rem;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 20%;
 }
 
 .contactme {
@@ -267,7 +281,8 @@ a:hover {
     font-size: 1.5rem;
 }
 
-/* animations */
+/* ANIMATIONS */
+
 /* navigation */
 @keyframes nav {
     0% {
@@ -279,11 +294,59 @@ a:hover {
 }
 
 /* Section 2 */
-@keyframes aboutme-section {
+@keyframes about {
     0% {
         transform: translateX(-100%);
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+/* Srolldown */
+@keyframes scrolldown {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Scrolling fade content */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Responsive media */
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+    .aboutme-section {
+        display: 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .aboutme-section img {
+        width: 200px;
+        height: 200px;
+    }
+    .aboutme-section-one-text h1 {
+        font-size: 2rem;
+    }
+    .aboutme-section-one-text {
+        font-size: 0.7rem;
     }
 }
