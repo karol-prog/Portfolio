@@ -330,9 +330,6 @@ a:hover {
     .container {
         flex-direction: column;
     }
-    .aboutme-section {
-        display: 
-    }
 }
 
 @media (max-width: 768px) {
