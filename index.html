@@ -19,6 +19,24 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
         </nav>
+        <!-- navigation for mobile -->
+        <nav id="hamburger-nav">
+            <div class="logo">Karol</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <!-- lines of hamb -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -42,8 +60,8 @@
                     <img src="Img/me.jpg" alt="The author of these portfolio">
                         <div class="aboutme-section-one-text"> 
                             <h1>About me</h1>  
-                            <p>Hi, my name is Karol. I'm from Slovakia and I want to be a Front-End developer. My background is mechanical design engineer, but I decided to swap these professions for lines of codes in VSCode and be creative as like in mechanical design engineering. I'm currently hunting for new informations of programming languages to reach my new goal.</p>
-                            <p>Hm, do i know everything? For sure no, but for every problem, there is a solution, that's motivated me for learning new technologies to reach that solution.</p>
+                            <p>Hi, my name is Karol. I'm from Slovakia and I want to be a Front-End developer. My background is a mechanical design engineer, but I decided to swap these professions for lines of codes in VSCode and be creative in mechanical design engineering. I'm currently hunting for new information about programming languages to reach new goals.</p>
+                            <p>Hm, do I know everything? For sure no, but for every problem, there is a solution, that has motivated me for learning new technologies to reach that solution.</p>
                         </div>  
                 </div>
             </section>
@@ -61,7 +79,6 @@
                         <li>
                             <div class="css-img">
                                 <img src="Img/CSS-img.png" alt="CSS img">
-                                <!-- <i class="fa-brands fa-css3-alt fa-lg" style="color: #1f71ff;"></i> -->
                                 <label>CSS</label>
                             </div>
                         </li>
@@ -157,4 +174,6 @@
         </div> <!-- Container -->
     </main>
 </body>
+
+<script src="script.js"></script>
 </html>
