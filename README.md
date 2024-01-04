@@ -8,4 +8,8 @@ THE TECHNOLOGIES
 HTML:
   - implementing semantic HTML,
   - understanding of basic concepts like div, img, button, link etc.,
-  - 
+  - implementing a fonts and fonts icon from fontawesom.com.
+
+CSS:
+  - Style the basic concept of the site,
+  - Learning how to use pseudo elements,
