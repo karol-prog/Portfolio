@@ -18,7 +18,7 @@ CSS:
 Javascript:
   - First time using simple JS function for hamburger navigation with help of Stackoverflow, but I got it. :)
 
-Last of all I use netlify to deploy my site to world of internet.
+Last of all I use netlify to deploy my site to world of internet. (https://karolportfolio.netlify.app/)
 
 
 I hope you will like my website and if you have some advice for me what I can change or make better you can contact me via my portfolio page.
