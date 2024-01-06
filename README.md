@@ -20,7 +20,7 @@ Javascript:
 
 Last of all I use netlify to deploy my site to world of internet. (https://karolportfolio.netlify.app/)
 
-
+I know that the site maybe isn't perfect, but you need to start somewhere to train perfection.
 I hope you will like my website and if you have some advice for me what I can change or make better you can contact me via my portfolio page.
 
 Happy Coding and See you later with my next projects!!! :)
