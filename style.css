@@ -164,27 +164,24 @@ a:hover {
 /* Section 2 */
 .aboutme-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 6rem;
-  margin: 8rem auto 8rem;
-  width: 100%;
-  height: 500px;
+  gap: 3rem;
+  height: 60vh;
+  margin: 6rem auto 6rem;
   animation: fade linear both;
   animation-timeline: view();
   animation-range: entry 50% cover 50%;
 }
 
-.aboutme-section img {
+.aboutmeimg img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 3px solid #fff;
-  margin-left: 150px;
 }
 
 .aboutme-section-one-text {
-  width: 50%;
   text-align: justify;
   font-size: 1.2rem;
   line-height: 1.8rem;
@@ -216,7 +213,7 @@ a:hover {
   align-items: center;
   list-style: none;
   gap: 5rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .html-img,
@@ -249,7 +246,7 @@ a:hover {
 /* Section 4 */
 .projects {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 2rem;
   animation: fade linear both;
   animation-timeline: view();
   animation-range: entry 50% cover 50%;
@@ -264,7 +261,7 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
   justify-content: center;
   gap: 1rem;
-  margin: 1rem;
+  margin-top: 2rem;
 }
 
 .projects-details-container {
@@ -334,10 +331,14 @@ a:hover {
 
 /* Section 5 */
 .form-container {
-  margin-top: 5rem;
+  margin-top: 2rem;
   animation: fade linear both;
   animation-timeline: view();
   animation-range: entry 50% cover 20%;
+}
+
+.form-container h1 {
+  font-size: 2rem;
 }
 
 .contactme {
@@ -346,7 +347,6 @@ a:hover {
   align-items: center;
   gap: 2rem;
   margin: 2rem auto;
-  padding: 2rem;
   font-size: 1rem;
 }
 
@@ -423,7 +423,7 @@ a:hover {
 
 /* Responsive media */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     flex-direction: column;
   }
@@ -434,7 +434,7 @@ a:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
   }
@@ -460,28 +460,29 @@ a:hover {
   }
 
   .aboutme-section {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
-    margin-top: 250px;
-    margin-bottom: 0;
-    animation: fade linear both;
-    animation-timeline: view();
-    animation-range: entry 50% cover 40%;
+    height: auto;
   }
-  .aboutme-section img {
-    position: absolute;
-    top: 100%;
-    right: 37%;
-    margin-top: 50px;
+
+  .aboutmeimg {
+    text-align: center;
+  }
+
+  .aboutmeimg img {
     width: 200px;
     height: 200px;
   }
+
   .aboutme-section-one-text h1 {
     font-size: 2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
   }
   .aboutme-section-one-text {
     font-size: 0.9rem;
+    line-height: 1.5rem;
   }
 
   .projects {
@@ -490,11 +491,15 @@ a:hover {
     animation-range: entry 50% cover 30%;
   }
   .experience-links {
+    flex-direction: column;
     gap: 1.5rem;
+  }
+  .contactme {
+    flex-direction: column;
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .container {
     flex-direction: column;
   }
@@ -511,21 +516,29 @@ a:hover {
   }
 
   .aboutme-section {
-    display: flex;
+    display: block;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .aboutmeimg {
     text-align: center;
   }
 
-  .aboutme-section img {
+  .aboutmeimg img {
     width: 200px;
-    height: auto;
-    position: absolute;
-    right: 27%;
+    height: 200px;
+  }
+
+  .aboutme-section-one-text h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
   }
   .aboutme-section-one-text {
-    width: 100%;
-    margin-top: 0;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
   }
 
   .experience-links {
