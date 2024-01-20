@@ -5,3 +5,12 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+/* Dark Mode */
+const darkTheme = document.querySelector(".fa-solid");
+
+darkTheme.addEventListener("click", function () {
+  document.body.classList.toggle("dark-theme");
+  darkTheme.classList.toggle("fa-moon");
+  darkTheme.classList.toggle("fa-sun");
+});
