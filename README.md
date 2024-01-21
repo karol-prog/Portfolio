@@ -7,20 +7,21 @@ THE TECHNOLOGIES
 
 HTML:
   - implementing semantic HTML,
-  - understanding of basic concepts like div, img, button, link etc.,
+  - understanding of basic concepts like div, image, button, link, etc.,
   - implementing a fonts and fonts icon from fontawesom.com.
 
 CSS:
   - Style the basic concept of the site with ID and classes,
-  - Learning how to use pseudo elements,
+  - Learning how to use pseudo-elements,
   - Understanding of display, transitions, animations, media queries
 
 Javascript:
-  - First time using simple JS function for hamburger navigation with help of Stackoverflow, but I got it. :)
+  - First time using a simple JS function for hamburger navigation with the help of Stackoverflow, but I got it. :)
+  - Add a DarkTheme
 
-Last of all I use netlify to deploy my site to world of internet. (https://karolportfolio.netlify.app/)
+Last of all I use Netlify to deploy my site to the world of the internet. (https://karolportfolio.netlify.app/)
 
-I know that the site maybe isn't perfect, but you need to start somewhere to train perfection.
-I hope you will like my website and if you have some advice for me what I can change or make better you can contact me via my portfolio page.
+I know the site may be imperfect, but you need to start somewhere to train perfection.
+I hope you will like my website and if you have some advice for me on what I can change or make better you can contact me via my portfolio page.
 
 Happy Coding and See you later with my next projects!!! :)
