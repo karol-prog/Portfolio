@@ -7,9 +7,17 @@ function toggleMenu() {
 }
 
 /* Dark Mode */
-const darkTheme = document.querySelector(".fa-solid");
+const darkTheme = document.querySelector(".fa-moon");
+const darkThemeNav = document.getElementById("nav-fa-moon");
 
 darkTheme.addEventListener("click", function () {
+  document.body.classList.toggle("dark-theme");
+  darkTheme.classList.toggle("fa-moon");
+  darkTheme.classList.toggle("fa-sun");
+});
+
+/* For Mobile */
+darkThemeNav.addEventListener("click", function () {
   document.body.classList.toggle("dark-theme");
   darkTheme.classList.toggle("fa-moon");
   darkTheme.classList.toggle("fa-sun");
