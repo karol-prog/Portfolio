@@ -10,15 +10,16 @@ function toggleMenu() {
 const darkTheme = document.querySelector(".fa-moon");
 const darkThemeNav = document.getElementById("nav-fa-moon");
 
-darkTheme.addEventListener("click", function () {
-  document.body.classList.toggle("dark-theme");
-  darkTheme.classList.toggle("fa-moon");
-  darkTheme.classList.toggle("fa-sun");
-});
+function DarkTheme(element, bodyClass, moonClass, sunClass) {
+  element.addEventListener("click", function () {
+    document.body.classList.toggle(bodyClass);
+    element.classList.toggle(moonClass);
+    element.classList.toggle(sunClass);
+  });
+}
 
-/* For Mobile */
-darkThemeNav.addEventListener("click", function () {
-  document.body.classList.toggle("dark-theme");
-  darkTheme.classList.toggle("fa-moon");
-  darkTheme.classList.toggle("fa-sun");
-});
+// For Desktop
+DarkTheme(darkTheme, "dark-theme", "fa-moon", "fa-sun");
+
+// For Mobile
+DarkTheme(darkThemeNav, "nav-dark-theme", "fa-moon", "fa-sun");

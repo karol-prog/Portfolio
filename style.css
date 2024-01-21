@@ -62,6 +62,10 @@ nav,
   animation: nav 800ms ease;
 }
 
+nav i:hover {
+  cursor: pointer;
+}
+
 .logo {
   font-size: 3rem;
   font-style: italic;
