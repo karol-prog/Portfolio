@@ -234,7 +234,8 @@ a:hover {
 
 .html-img,
 .css-img,
-.js-img {
+.js-img,
+.github-img {
   width: 10rem;
   height: 3rem;
   border: 1px solid var(--text-color);
@@ -242,20 +243,16 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   padding: 1.5rem;
 }
 
 .html-img img,
 .css-img img,
-.js-img img {
+.js-img img,
+.github-img img {
   width: 2rem;
   height: 2rem;
-}
-
-.html-img label,
-.css-img label,
-.js-img label {
-  margin-left: 0.5rem;
 }
 
 /* Section 4 */
